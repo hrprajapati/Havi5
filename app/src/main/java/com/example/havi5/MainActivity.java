@@ -18,7 +18,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity {
 
-    EditText hpEmail,hpPassword,hpConfirmpassword;
+    EditText hpEmail,hpPassword,hpConfirmpassword,hpMobile,hpName,hpDate;
     Button Submit,Submit2;
     private FirebaseAuth firebaseAuth;
 
@@ -33,6 +33,9 @@ public class MainActivity extends AppCompatActivity {
         hpConfirmpassword=(EditText)findViewById(R.id.hp_confirmpassword);
         Submit=(Button)findViewById(R.id.hp_submit);
         Submit2=(Button)findViewById(R.id.hp_submit2);
+        hpDate=(EditText)findViewById(R.id.hp_date);
+        hpMobile=(EditText)findViewById(R.id.hp_mobile);
+        hpName=(EditText)findViewById(R.id.hp_name);
         firebaseAuth=FirebaseAuth.getInstance();
 
         Submit.setOnClickListener(new View.OnClickListener() {
@@ -41,7 +44,9 @@ public class MainActivity extends AppCompatActivity {
                 String email=hpEmail.getText().toString().trim();
                 String password=hpPassword.getText().toString().trim();
                 String confirmpassword=hpConfirmpassword.getText().toString().trim();
-
+                String mobile=hpMobile.getText().toString().trim();
+                String name=hpName.getText().toString().trim();
+                String date=hpDate.getText().toString().trim();
 
                 if(TextUtils.isEmpty(email)){
                     Toast.makeText(MainActivity.this,"please enter email",Toast.LENGTH_SHORT).show();
@@ -55,8 +60,18 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(MainActivity.this,"please enter confirmpassword",Toast.LENGTH_SHORT).show();
                     return;
                 }
-
-
+                if(TextUtils.isEmpty(name)){
+                    Toast.makeText(MainActivity.this,"please enter name",Toast.LENGTH_SHORT).show();
+                    return;
+                }
+                if(TextUtils.isEmpty(mobile)){
+                    Toast.makeText(MainActivity.this,"please enter mobile",Toast.LENGTH_SHORT).show();
+                    return;
+                }
+                if(TextUtils.isEmpty(date)){
+                    Toast.makeText(MainActivity.this,"please enter date",Toast.LENGTH_SHORT).show();
+                    return;
+                }
                 if(password.length()<6){
                     Toast.makeText(MainActivity.this,"password too short",Toast.LENGTH_SHORT).show();
                 }

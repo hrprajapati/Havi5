@@ -20,6 +20,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="120dp" />
+
     <EditText
         android:id="@+id/hp_date"
         android:layout_width="wrap_content"
@@ -27,8 +28,8 @@
         android:layout_gravity="center"
         android:layout_marginTop="28dp"
         android:ems="10"
-        android:hint="date of birth"
-        android:inputType="date|textAutoCorrect|text"
+        android:hint="Registration date"
+        android:inputType="date"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
