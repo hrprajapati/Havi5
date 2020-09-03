@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "409867869960",
+    "firebase_url": "https://havi5-c2e18.firebaseio.com",
+    "project_id": "havi5-c2e18",
+    "storage_bucket": "havi5-c2e18.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:409867869960:android:3774feb3a77a95244896bd",
+        "android_client_info": {
+          "package_name": "com.example.havi5"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "409867869960-g6q3qejvs9gtq8ucc31v8ftbu34nuc3e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVQgDLV9CpbWci1sWIH5n0NB4OqeOSKcY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "409867869960-g6q3qejvs9gtq8ucc31v8ftbu34nuc3e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
